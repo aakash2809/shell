@@ -1,0 +1,20 @@
+#!/bin/bash
+
+MIN=10
+MAX=99
+sum=0
+average=0;
+
+for (( count=0; count<5 ; count++))
+        do
+
+                randomTwodigitNo=$((RANDOM%(MAX-MIN)+$MIN));
+                echo "Rendom no.is " $randomTwodigitNo
+                 sum=$(($sum + $randomTwodigitNo));
+
+
+        done
+
+average=$(($sum/5));
+echo  " The sum of Rondomly genrated five two digit numbers is - "  $sum;
+echo  " Avaerage" $average;
